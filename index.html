@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <script src="js/index.js"></script>
 </head>
 
 
@@ -26,22 +28,44 @@
         </div>
 
 
-<!-- rock paper scissor button -->
+        <!-- rock paper scissor button -->
 
         <div class="hands">
             <div class="hand paper">
-                <img src="/assets/paper.png">
+                <img src="/assets/paper.png" onclick="pickUserHand('paper')">
             </div>
             <div class="hand scissors">
-                <img src="/assets/scissors.png">
+                <img src="/assets/scissors.png" onclick="pickUserHand('scissors')">
             </div>
             <div class="hand rock">
-                <img src="/assets/rock.png">
+                <img src="/assets/rock.png" onclick="pickUserHand('rock')">
             </div>
         </div>
 
 
 
+
+        <!-- Result after picking button -->
+        <div class="contest">
+            <div class="userhand">
+                <h1>YOU PICKED</h1>
+                <div class="handImageContainer">
+                    <img src="/assets/paper.png">
+                </div>
+            </div>
+
+            <div class="referee">
+                    <div class="decision"><h1>YOU WIN</h1></div>
+                    <div class="newGame">PLAY AGAIN</div>
+            </div>
+
+            <div class="computerhand">
+                <h1>THE HOUSE PICKED</h1>
+                <div class="handImageContainer">
+                    <img src="/assets/scissors.png">
+                </div>
+            </div>
+        </div>
 
 
 
