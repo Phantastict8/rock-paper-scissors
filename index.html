@@ -50,19 +50,19 @@
             <div class="userhand">
                 <h1>YOU PICKED</h1>
                 <div class="handImageContainer">
-                    <img src="/assets/paper.png">
+                    <img id="userPickImage" src="/assets/paper.png">
                 </div>
             </div>
 
             <div class="referee">
                     <div class="decision"><h1>YOU WIN</h1></div>
-                    <div class="newGame">PLAY AGAIN</div>
+                    <div class="newGame" onClick="restartGame()">PLAY AGAIN</div>
             </div>
 
             <div class="computerhand">
                 <h1>THE HOUSE PICKED</h1>
                 <div class="handImageContainer">
-                    <img src="/assets/scissors.png">
+                    <img id="computerPickImage" src="/assets/scissors.png">
                 </div>
             </div>
         </div>
